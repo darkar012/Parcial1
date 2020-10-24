@@ -1,10 +1,10 @@
-9, Zorro, Borzoi, 1,null
-5, Doggy, Labrador, 2,null
-2, Mateo, Gran Danes, 5,null
-8, Pegaso, Bulldog frances, 5,null
-4, Anibal, Lobero irlandes, 6,null
-10, Firulais, Galgo, 8,null
-6, White, Pitbull, 9,null
-1, Cancerbero, Pastor australiano, 12,null
-7, Gasper, Beagle, 15,null
-3, Floppi, Doberman, 20,null
+9, Zorro, Borzoi, 1,20-06-2018
+5, Doggy, Labrador, 2,10-11-2017
+8, Pegaso, Bulldog frances, 5,06-01-2014
+2, Mateo, Gran Danes, 5,12-05-2014
+4, Anibal, Lobero irlandes, 6,10-07-2013
+10, Firulais, Galgo, 8,21-02-2011
+6, White, Pitbull, 9,01-12-2010
+1, Cancerbero, Pastor australiano, 12,25-04-2002
+7, Gasper, Beagle, 15,10-10-2014
+3, Floppi, Doberman, 20,25-02-1999
