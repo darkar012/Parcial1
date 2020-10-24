@@ -1,10 +1,10 @@
-1, Cancerbero, Pastor australiano, 12,25-4-2002
-2, Mateo, Gran Danes, 5,12-5-2014
-3, Floppi, Doberman, 20,25-2-1999
-4, Anibal, Lobero irlandes, 6,10-7-2013
-5, Doggy, Labrador, 2,10-11-2017
-6, White, Pitbull, 9,1-12-2010
-7, Gasper, Beagle, 15,10-10-2014
-8, Pegaso, Bulldog frances, 5,6-1-2014
-9, Zorro, Borzoi, 1,20-6-2018
-10, Firulais, Galgo, 8,21-2-2011
+1, Cancerbero, Pastor australiano, 12,Thu Apr 25 00:00:00 COT 2002
+2, Mateo, Gran Danes, 5,Mon May 12 00:00:00 COT 2014
+3, Floppi, Doberman, 20,Thu Feb 25 00:00:00 COT 1999
+4, Anibal, Lobero irlandes, 6,Wed Jul 10 00:00:00 COT 2013
+5, Doggy, Labrador, 2,Fri Nov 10 00:00:00 COT 2017
+6, White, Pitbull, 9,Wed Dec 01 00:00:00 COT 2010
+7, Gasper, Beagle, 15,Fri Oct 10 00:00:00 COT 2014
+8, Pegaso, Bulldog frances, 5,Mon Jan 06 00:00:00 COT 2014
+9, Zorro, Borzoi, 1,Wed Jun 20 00:00:00 COT 2018
+10, Firulais, Galgo, 8,Mon Feb 21 00:00:00 COT 2011
