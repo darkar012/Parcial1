@@ -11,7 +11,7 @@ public class Dog implements Comparable<Dog>{
 	private Date date;
 	private int age, ID;
 	private PApplet app;
-	
+
 	//Dog class constructor
 	public Dog (int ID, int age, String name, String race, Date date, PApplet app) {
 		this.ID=ID;
@@ -21,7 +21,7 @@ public class Dog implements Comparable<Dog>{
 		this.date = date;
 		this.app = app;
 	}
-	
+
 	//write text method
 	public void writeDog(int x) {
 		//text's size setup
@@ -33,7 +33,7 @@ public class Dog implements Comparable<Dog>{
 		app.text("Edad: "+ age, x, 162);
 		// the SimpleDateFormat is used to apply the format of date to the date variable to write it in the main
 		SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
-        String date = format.format(this.date);
+		String date = format.format(this.date);
 		app.text("B: "+date, x, 182);
 	}
 	// compareTo using ID to order
@@ -82,5 +82,5 @@ public class Dog implements Comparable<Dog>{
 	}
 
 
-	
+
 }
