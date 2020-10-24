@@ -104,7 +104,9 @@ public class Logic {
 				String age = Integer.toString(dogList.get(i).getAge());
 				//the get(i) obtains the position, and later the attribute is called from dog class to be saved as string 
 				String name = dogList.get(i).getName();
+				name = name.toLowerCase();
 				String race = dogList.get(i).getRace();
+				race= race.toLowerCase();
 				//// the SimpleDateFormat is used to apply the format of date to the date variable used in the constructor of Dog
 				SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 				String date = format.format (dogList.get(i).getDate());
@@ -126,7 +128,9 @@ public class Logic {
 				String ID = Integer.toString(dogList.get(i).getID());
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
+				name = name.toLowerCase();
 				String race = dogList.get(i).getRace();
+				race= race.toLowerCase();
 				SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 				String date = format.format (dogList.get(i).getDate());
 
@@ -144,7 +148,9 @@ public class Logic {
 				String ID = Integer.toString(dogList.get(i).getID());
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
+				name = name.toLowerCase();
 				String race = dogList.get(i).getRace();
+				race= race.toLowerCase();
 				SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 				String date = format.format (dogList.get(i).getDate());
 
@@ -162,7 +168,9 @@ public class Logic {
 				String ID = Integer.toString(dogList.get(i).getID());
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
+				name = name.toLowerCase();
 				String race = dogList.get(i).getRace();
+				race= race.toLowerCase();
 				SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 				String date = format.format (dogList.get(i).getDate());
 
@@ -180,7 +188,9 @@ public class Logic {
 				String ID = Integer.toString(dogList.get(i).getID());
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
+				name = name.toLowerCase();
 				String race = dogList.get(i).getRace();
+				race= race.toLowerCase();
 				SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 				String date = format.format (dogList.get(i).getDate());
 

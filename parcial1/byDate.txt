@@ -1,10 +1,10 @@
-3, Floppi, Doberman, 20,25-02-1999
-1, Cancerbero, Pastor australiano, 12,25-04-2002
-6, White, Pitbull, 9,01-12-2010
-10, Firulais, Galgo, 8,21-02-2011
-4, Anibal, Lobero irlandes, 6,10-07-2013
-8, Pegaso, Bulldog frances, 5,06-01-2014
-2, Mateo, Gran Danes, 5,12-05-2014
-7, Gasper, Beagle, 15,10-10-2014
-5, Doggy, Labrador, 2,10-11-2017
-9, Zorro, Borzoi, 1,20-06-2018
+3, floppi, doberman, 20,25-02-1999
+1, cancerbero, pastor australiano, 12,25-04-2002
+6, white, pitbull, 9,01-12-2010
+10, firulais, galgo, 8,21-02-2011
+4, anibal, lobero irlandes, 6,10-07-2013
+8, pegaso, bulldog frances, 5,06-01-2014
+2, mateo, gran danes, 5,12-05-2014
+7, gasper, beagle, 15,10-10-2014
+5, doggy, labrador, 2,10-11-2017
+9, zorro, borzoi, 1,20-06-2018
