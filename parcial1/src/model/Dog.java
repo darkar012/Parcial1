@@ -1,29 +1,32 @@
 package model;
 
+import java.util.Date;
+
 import processing.core.PApplet;
 
 public class Dog implements Comparable<Dog>{
 	
 	private String name, race, bDate;
+	private Date date;
 	private int age, ID;
 	private PApplet app;
 	
-	public Dog (int ID, int age, String name, String race, String bDate, PApplet app) {
+	public Dog (int ID, int age, String name, String race, Date date, PApplet app) {
 		this.ID=ID;
 		this.age=age;
 		this.name = name;
 		this.race = race;
-		this.bDate = bDate;
+		this.date = date;
 		this.app = app;
 	}
 	
 	public void writeDog(int x) {
 		app.textSize(14);
-		app.text(ID, x, 300);
+		app.text("ID: "+ID, x, 300);
 		app.text(name, x, 320);
 		app.text(race, x, 342);
-		app.text(age, x, 362);
-		app.text(bDate.toString(), x, 382);
+		app.text("Edad: "+ age, x, 362);
+		app.text("birthday: " +date.toString(), x, 382);
 	}
 	
 	public int compareTo(Dog nextDog) {

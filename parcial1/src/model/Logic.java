@@ -1,6 +1,9 @@
 package model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Collections;
+import java.util.Date;
 import java.util.LinkedList;
 
 import processing.core.PApplet;
@@ -15,10 +18,12 @@ public class Logic {
 	private String [] byName;
 	private String [] byRace;
 	private String [] byBDate;
+	private String [] byAge;
 	
 	private NameComparator NC;
 	private RaceComparator RC;
 	private BirthDateComparator BDC;
+	private AgeComparator AC;
 	
 	private PApplet app;
 
@@ -32,10 +37,12 @@ public class Logic {
 		byName = new String[10];
 		byRace = new String[10];
 		byBDate = new String[10];
+		byAge = new String[10];
 		
 		NC = new NameComparator();
 		RC = new RaceComparator();
 		BDC = new BirthDateComparator();
+		AC = new AgeComparator();
 		
 		dogs1 = PApplet.sort(dogs1);
 		dogs2 = PApplet.sort(dogs2);
@@ -48,7 +55,16 @@ public class Logic {
 				String[] lineString2 = dogs2[i].split(",");
 				//if (lineString.equals(ID)) {
 					String race = lineString2[1];
-					String date = lineString2[2];
+					SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+					Date date = null;
+					try {
+						date = format.parse(lineString2[2]);
+					} catch (ParseException ex) {
+						// TODO Auto-generated catch block
+						System.out.println(ex);
+					}
+					System.out.println(date);
+					
 					addElementList(new Dog (ID,age, name, race, date, app));
 				}
 		}
@@ -122,6 +138,22 @@ public class Logic {
 				byBDate[i] = line;
 			}
 			this.app.saveStrings("byDate.txt", byBDate);
+			break;
+		case 'e':
+			Collections.sort(dogList, AC);
+			
+			for (int i = 0; i < dogList.size(); i++) {
+				
+				String ID = Integer.toString(dogList.get(i).getID());
+				String age = Integer.toString(dogList.get(i).getAge());
+				String name = dogList.get(i).getName();
+				String race = dogList.get(i).getRace();
+				String date = dogList.get(i).getbDate();
+
+				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
+				byAge[i] = line;
+			}
+			this.app.saveStrings("byAge.txt", byAge);
 			break;
 		default:
 	}
