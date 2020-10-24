@@ -1,0 +1,10 @@
+9, Zorro, Borzoi, 1,null
+5, Doggy, Labrador, 2,null
+2, Mateo, Gran Danes, 5,null
+8, Pegaso, Bulldog frances, 5,null
+4, Anibal, Lobero irlandes, 6,null
+10, Firulais, Galgo, 8,null
+6, White, Pitbull, 9,null
+1, Cancerbero, Pastor australiano, 12,null
+7, Gasper, Beagle, 15,null
+3, Floppi, Doberman, 20,null
