@@ -62,9 +62,7 @@ public class Logic {
 					} catch (ParseException ex) {
 						// TODO Auto-generated catch block
 						System.out.println(ex);
-					}
-					System.out.println(date);
-					
+					}					
 					addElementList(new Dog (ID,age, name, race, date, app));
 				}
 		}
@@ -84,7 +82,7 @@ public class Logic {
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
 				String race = dogList.get(i).getRace();
-				String date = dogList.get(i).getbDate();
+				Date date = dogList.get(i).getDate();
 
 				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
 				byID[i] = line;
@@ -100,7 +98,7 @@ public class Logic {
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
 				String race = dogList.get(i).getRace();
-				String date = dogList.get(i).getbDate();
+				Date date = dogList.get(i).getDate();
 
 				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
 				byName[i] = line;
@@ -116,7 +114,7 @@ public class Logic {
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
 				String race = dogList.get(i).getRace();
-				String date = dogList.get(i).getbDate();
+				Date date = dogList.get(i).getDate();
 
 				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
 				byRace[i] = line;
@@ -132,7 +130,7 @@ public class Logic {
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
 				String race = dogList.get(i).getRace();
-				String date = dogList.get(i).getbDate();
+				Date date = dogList.get(i).getDate();
 
 				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
 				byBDate[i] = line;
@@ -148,7 +146,7 @@ public class Logic {
 				String age = Integer.toString(dogList.get(i).getAge());
 				String name = dogList.get(i).getName();
 				String race = dogList.get(i).getRace();
-				String date = dogList.get(i).getbDate();
+				Date date = dogList.get(i).getDate();
 
 				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
 				byAge[i] = line;

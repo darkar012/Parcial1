@@ -1,12 +1,13 @@
 package model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import processing.core.PApplet;
 
 public class Dog implements Comparable<Dog>{
 	
-	private String name, race, bDate;
+	private String name, race;
 	private Date date;
 	private int age, ID;
 	private PApplet app;
@@ -22,11 +23,13 @@ public class Dog implements Comparable<Dog>{
 	
 	public void writeDog(int x) {
 		app.textSize(14);
-		app.text("ID: "+ID, x, 300);
-		app.text(name, x, 320);
-		app.text(race, x, 342);
-		app.text("Edad: "+ age, x, 362);
-		app.text("birthday: " +date.toString(), x, 382);
+		app.text("ID: "+ID, x, 100);
+		app.text("N: "+ name, x, 120);
+		app.text("R: "+race, x, 142);
+		app.text("Edad: "+ age, x, 162);
+		SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+        String date = format.format(this.date);
+		app.text("B: "+date.toString(), x, 182);
 	}
 	
 	public int compareTo(Dog nextDog) {
@@ -65,14 +68,13 @@ public class Dog implements Comparable<Dog>{
 		ID = iD;
 	}
 
-	public String getbDate() {
-		return bDate;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setbDate(String bDate) {
-		this.bDate = bDate;
+	public void setDate(Date date) {
+		this.date = date;
 	}
-
 
 
 	
