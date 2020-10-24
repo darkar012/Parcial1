@@ -12,6 +12,14 @@ public class Logic {
 	private LinkedList<Dog> dogList;
 	
 	private String [] byID;
+	private String [] byName;
+	private String [] byRace;
+	private String [] byBDate;
+	
+	private NameComparator NC;
+	private RaceComparator RC;
+	private BirthDateComparator BDC;
+	
 	private PApplet app;
 
 	public Logic(PApplet app){
@@ -21,6 +29,13 @@ public class Logic {
 		dogList = new LinkedList<Dog>();
 		
 		byID = new String[10];
+		byName = new String[10];
+		byRace = new String[10];
+		byBDate = new String[10];
+		
+		NC = new NameComparator();
+		RC = new RaceComparator();
+		BDC = new BirthDateComparator();
 		
 		dogs1 = PApplet.sort(dogs1);
 		dogs2 = PApplet.sort(dogs2);
@@ -58,10 +73,57 @@ public class Logic {
 				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
 				byID[i] = line;
 			}
-			this.app.saveStrings("byRating.txt", byID);
+			this.app.saveStrings("byID.txt", byID);
+			break;
+		case 'n':
+			Collections.sort(dogList, NC);
 			
+			for (int i = 0; i < dogList.size(); i++) {
+				
+				String ID = Integer.toString(dogList.get(i).getID());
+				String age = Integer.toString(dogList.get(i).getAge());
+				String name = dogList.get(i).getName();
+				String race = dogList.get(i).getRace();
+				String date = dogList.get(i).getbDate();
+
+				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
+				byName[i] = line;
+			}
+			this.app.saveStrings("byName.txt", byName);
+			break;
+		case 'r':
+			Collections.sort(dogList, RC);
+			
+			for (int i = 0; i < dogList.size(); i++) {
+				
+				String ID = Integer.toString(dogList.get(i).getID());
+				String age = Integer.toString(dogList.get(i).getAge());
+				String name = dogList.get(i).getName();
+				String race = dogList.get(i).getRace();
+				String date = dogList.get(i).getbDate();
+
+				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
+				byRace[i] = line;
+			}
+			this.app.saveStrings("byRace.txt", byRace);
+			break;
+		case 'd':
+			Collections.sort(dogList, BDC);
+			
+			for (int i = 0; i < dogList.size(); i++) {
+				
+				String ID = Integer.toString(dogList.get(i).getID());
+				String age = Integer.toString(dogList.get(i).getAge());
+				String name = dogList.get(i).getName();
+				String race = dogList.get(i).getRace();
+				String date = dogList.get(i).getbDate();
+
+				String line = ID + ", " + name + ", " + race + ", " + age + "," + date;
+				byBDate[i] = line;
+			}
+			this.app.saveStrings("byDate.txt", byBDate);
+			break;
 		default:
-		
 	}
 	}
 	

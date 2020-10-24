@@ -28,10 +28,10 @@ public class Main extends PApplet{
 		}
 		
 		textSize(30);
-		text("Pulse R para ordenar por rating", 10, 500);
-		text("Pulse y para ordenar por año", 10, 535);
-		text("Pulse n para ordenar por nombre", 10, 565);
-		text("Pulse t para ordenar por tipo", 10, 595);
+		text("Pulse i para ordenar por ID", 10, 500);
+		text("Pulse n para ordenar por nombre", 10, 535);
+		text("Pulse r para ordenar por raza", 10, 565);
+		text("Pulse d para ordenar por fecha de nacimiento", 10, 595);
 
 	}
 
